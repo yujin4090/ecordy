@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    font-family: 'NanumSquare';
+    font-family: 'NanumSquare', 'NanumMyeongjoExtraBold';
     font-size: 14px;
     line-height: 1.5;
     color: #333;
@@ -130,6 +130,7 @@ header {
 .cover1 {
     display: flex;
     height: 487px;
+    overflow: hidden;
 }
 
 .bi1 {
@@ -211,8 +212,6 @@ header {
     border-radius: 100px;
     margin-bottom: 30px;
     margin-left: 10px;
-
-    transition: 0.5s;
 }
 
 .one img {
@@ -287,9 +286,21 @@ header {
     gap: 20px;
 }
 
+/* .in{
+    background-color: #f2f7f6;
+    border: 2px solid #b7d3d1;
+    padding: 15px;
+    border-radius: 20px;
+} */
+
 .in li {
+    font-size: 16px;
     margin-bottom: 8px;
     overflow: hidden;
+}
+
+.in a:hover{
+    text-decoration: underline;
 }
 
 .in img {
@@ -317,8 +328,8 @@ header {
     color: #6AAA9B;
 }
 
-.in li {
-    font-size: 16px;
+.shop a:hover{
+    text-decoration: none;
 }
 
 .name {
@@ -340,6 +351,16 @@ header {
     margin: 0 auto 200px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.category h1{
+    font-family: 'NanumMyeongjoExtraBold';
+    font-size: 94px;
+    color: #222;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
 }
 
 .left {
@@ -590,6 +611,7 @@ header {
 
 .ev_img img:hover {
     transform: scale(1.2, 1.2);
+    filter: brightness(60%);
 }
 
 .ev_img img {
@@ -601,7 +623,7 @@ header {
 
 .ev_in h2 {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 10px;
     border-radius: 20px;
     /* transition: 0.5s; */
@@ -609,7 +631,7 @@ header {
 
 .ev_in p {
     font-size: 16px;
-    color: #666;
+    color: #555;
     border-radius: 20px;
     /* transition: 0.5s; */
 }
@@ -669,11 +691,24 @@ header {
     padding-bottom: 30px;
 }
 
+.instagram .swiper-wrapper{
+    margin-bottom: 40px;
+}
+
+.instagram .swiper-pagination-bullet-active{
+    background-color: #3f817a;
+}
+
+.instagram .swiper-pagination-bullet{
+    width: 25px;
+    border-radius: 20px;
+}
+
 .span h2 {
     font-size: 64px;
     font-weight: 900;
     color: rgba(106, 154, 152, 0.5);
-    margin-top: 60px;
+    margin-top: 40px;
     width: 2900px;
 
     animation: ani 6s linear infinite;

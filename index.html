@@ -10,7 +10,8 @@
 
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -62,8 +63,8 @@
     <h1>Our Brand</h1>
 
     <div class="cover1">
-      <img src="./images/BI_1.jpg" alt="BI 1" class="bi1">
-      <img src="./images/BI_2.jpg" alt="BI 2" class="bi2">
+      <div data-aos="fade-up"><img src="./images/BI_1.jpg" alt="BI 1" class="bi1"></div>
+      <div data-aos="zoom-in-left"><img src="./images/BI_2.jpg" alt="BI 2" class="bi2"></div>
 
       <div class="text">
         <h3>
@@ -96,7 +97,7 @@
     <div class="cover2">
       <div class="circle">
         <ul>
-          <li class="one"><a href="#">
+          <li data-aos="fade-up" data-aos-delay="600" class="one"><a href="#">
               <img src="./images/symbol_eco.png" alt="eco">
             </a></li>
           <li><a href="#" class="co">무독성&안전한</a></li>
@@ -106,7 +107,7 @@
       </div>
       <div class="circle">
         <ul>
-          <li class="one"><a href="#">
+          <li data-aos="fade-up" data-aos-delay="300" class="one"><a href="#">
               <img src="./images/symbol_foot.png" alt="foot">
             </a></li>
           <li><a href="#" class="co">저탄소 발자국</a></li>
@@ -116,7 +117,7 @@
       </div>
       <div class="circle">
         <ul>
-          <li class="one"><a href="#">
+          <li data-aos="fade-up" class="one"><a href="#">
               <img src="./images/symbol_infinite.png" alt="지속">
             </a></li>
           <li><a href="#" class="co">지속 가능한</a></li>
@@ -126,7 +127,7 @@
       </div>
       <div class="circle">
         <ul>
-          <li class="one"><a href="#">
+          <li data-aos="fade-up" data-aos-delay="300" class="one"><a href="#">
               <img src="./images/symbol_recycle.png" alt="재활용">
             </a></li>
           <li><a href="#" class="co">제로 웨이스트</a></li>
@@ -136,7 +137,7 @@
       </div>
       <div class="circle">
         <ul>
-          <li class="one"><a href="#">
+          <li data-aos="fade-up" data-aos-delay="600" class="one"><a href="#">
               <img src="./images/symbol_hand.png" alt="악수">
             </a></li>
           <li><a href="#" class="co">윤리적&공정무역</a></li>
@@ -208,6 +209,8 @@
       <li class="line"></li>
       <li><a href="#">Vintage</a></li>
     </ul>
+
+    <h1 data-aos="fade-right">MODERN</h1>
 
     <img src="./images/modern.jpg" alt="모던" class="modern">
 
@@ -313,7 +316,7 @@
     <h1>Event</h1>
     <ul class="ev">
       <li>
-        <ul class="ev_in">
+        <ul data-aos="fade-up" class="ev_in">
           <li class="ev_img"><a href="#">
               <img src="./images/event1.jpg" alt="ev1">
             </a></li>
@@ -327,7 +330,7 @@
         </ul>
       </li>
       <li>
-        <ul class="ev_in">
+        <ul data-aos="fade-up" data-aos-delay="300" class="ev_in">
           <li class="ev_img"><a href="#">
               <img src="./images/event2.png" alt="ev2">
             </a></li>
@@ -341,7 +344,7 @@
         </ul>
       </li>
       <li>
-        <ul class="ev_in">
+        <ul data-aos="fade-up" data-aos-delay="600" class="ev_in">
           <li class="ev_img"><a href="#">
               <img src="./images/event3.jpg" alt="ev3">
             </a></li>
@@ -381,6 +384,7 @@
           <img src="./images/sns05.png" alt="이미지5">
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="span">
@@ -401,7 +405,7 @@
     <div class="notice_box">
       <ul class="bigger">
         <li>
-          <ul class="contact">
+          <ul data-aos="fade-up" class="contact">
             <li class="bold">Contact</li>
             <li class="bolder">1588-1650</li>
             <li class="ppp">에코디 인테리어에 관해 궁금한 내용이 있으시다면 <br>
@@ -412,7 +416,7 @@
           </ul>
         </li>
         <li>
-          <ul class="contact">
+          <ul data-aos="fade-up" data-aos-delay="300" class="contact">
             <li class="bold">FAQ</li>
             <li class="pp">고객님들이 자주 묻는 질문과 <br>
               그에 대한 답변을 바로 확인하세요.
@@ -423,7 +427,7 @@
           </ul>
         </li>
         <li>
-          <ul class="contact">
+          <ul data-aos="fade-up" data-aos-delay="600" class="contact">
             <li class="bold">Inquiry</li>
             <li class="pp">문의 사항이나 요청하실 정보가 있다면 <br>성심성의껏 답변해 드리겠습니다.</li>
             <li><a href="#" class="more">
@@ -486,10 +490,17 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
   <!-- Initialize Swiper -->
 
   <script>
 
+    // 메인배너
     var swiper1 = new Swiper(".banner", {
       effect: "fade",
       loop: true,
@@ -500,12 +511,25 @@
       speed: 1000,
     });
 
+    // BI
+    AOS.init({
+      duration: 1000,
+      offset: 300,
+      easing: 'ease-out-back',
+    });
+
+    // 리뷰 사진
     var swiper2 = new Swiper(".instagram", {
       slidesPerView: 4.2,
       spaceBetween: 20,
+      pagination: {
+        el: ".instagram .swiper-pagination",
+        clickable: true,
+      },
       loop: true,
     });
 
+    // 신제품 버튼
     var swiper3 = new Swiper(".btn", {
       navigation: {
         nextEl: ".btn .swiper-button-next",
@@ -513,22 +537,37 @@
       },
     });
 
+    // 전체상품
     const slide = gsap.timeline();
     slide
       .to(".slide div", {
-        x: -2000,
+        x: -600,
       })
 
     ScrollTrigger.create({
       animation: slide,
       trigger: ".slide",
-      start: "top top",
-      end: "+=2000",
+      start: "top 20% center",
+      end: "+=1500",
       scrub: true,
       pin: true,
       anticipatePin: 1, // 핀 효과를 부드럽게 줄 수 있음.
       markers: true,
     });
+
+
+    const lenis = new Lenis();
+
+        lenis.on('scroll', (e) => {
+            console.log(e);
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
   </script>
 </body>
 
