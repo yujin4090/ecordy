@@ -19,23 +19,25 @@
 
   <!-- 헤더 -->
   <header>
-    <a href="#"><img src="./images/ecordy_logo.png" alt="로고" class="logo"></a>
+    <div class="head">
+      <a href="#"><img src="./images/ecordy_logo.png" alt="로고" class="logo"></a>
 
-    <ul class="menu">
-      <li><a href="#">BRAND</a></li>
-      <li><a href="#">PRODUCT</a></li>
-      <li><a href="#">EVENT</a></li>
-      <li><a href="#">REVIEW</a></li>
-      <li><a href="#">NOTICE</a></li>
-    </ul>
+      <ul class="menu">
+        <li><a href="#">BRAND</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">EVENT</a></li>
+        <li><a href="#">REVIEW</a></li>
+        <li><a href="#">NOTICE</a></li>
+      </ul>
 
-    <ul class="login">
-      <li><a href="#">
-          <img src="./images/search.png" alt="검색" class="search">
-        </a></li>
-      <li><a href="#">LOG IN</a></li>
-      <li><a href="#">SIGN UP</a></li>
-    </ul>
+      <ul class="login">
+        <li><a href="#">
+            <img src="./images/search.png" alt="검색" class="search">
+          </a></li>
+        <li><a href="#">LOG IN</a></li>
+        <li><a href="#">SIGN UP</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- 메인배너 -->
@@ -170,7 +172,7 @@
           <li class="shop"><a href="#">담기</a></li>
           <li class="name"><a href="#">레트로하우스</a></li>
           <li><a href="#">모나 원목 협탁 사이드테이블</a></li>
-          <li class="price">39,900원</li>
+          <li class="price"><span>13%</span> <del>39,900원 </del> 34,700원</li>
         </ul>
       </li>
       <li>
@@ -181,7 +183,7 @@
           <li class="shop"><a href="#">담기</a></li>
           <li class="name"><a href="#">블루밍홈</a></li>
           <li><a href="#">네이쳐 원형 원목 스툴</a></li>
-          <li class="price">16,900원</li>
+          <li class="price"><span>15%</span> <del>19,900원 </del> 16,900원</li>
         </ul>
       </li>
       <li>
@@ -192,7 +194,7 @@
           <li class="shop"><a href="#">담기</a></li>
           <li class="name"><a href="#">우드레이</a></li>
           <li><a href="#">화이트로크 원목 벽선반</a></li>
-          <li class="price">24,800원</li>
+          <li class="price"><span>15%</span> <del>28,800원 </del> 24,500원</li>
         </ul>
       </li>
     </ul>
@@ -210,7 +212,7 @@
       <li><a href="#">Vintage</a></li>
     </ul>
 
-    <h1 data-aos="fade-right">MODERN</h1>
+    <h1 data-aos="fade-right" data-aos-delay="50">MODERN</h1>
 
     <img src="./images/modern.jpg" alt="모던" class="modern">
 
@@ -260,53 +262,55 @@
           <ul class="slide_in">
             <li class="cov"><img src="./images/all_slippers.jpg" alt="슬리퍼"></li>
             <li class="nm">지속 가능한 홈웨어</li>
-            <li class="p2">집에서의 편안함과 건강을 동시에 고려한 친환경 홈웨어 및 <br>생활 제품입니다.사용자의 일상을 더욱 건강하고 지속 가능 <br>하게 만들어줍니다.</li>
+            <li class="p2">집에서의 편안함과 건강을 동시에 고려한 친환경 홈웨어 및 <br>생활 제품입니다. 사용자의 일상을 더욱 건강하고 지속 가능 <br>하게 만들어줍니다.</li>
           </ul>
         </a></div>
     </div>
   </div>
 
   <!-- 신제품 -->
-  <div class="new">
-    <div class="new_t">
-      <h1>NEW</h1>
+  <div class="new_all">
+    <div class="new">
+      <div class="new_t">
+        <h1>NEW.</h1>
 
-      <h2>블랑코 패브릭 1인 소파</h2>
+        <h2>블랑코 패브릭 1인 소파</h2>
 
-      <p>
-        부드러운 촉감의 고급스러운 소재를 사용하여 더욱 편안하고 안락합니다. <br>
-        블랑코는 세련된 컬러감으로 인테리어 포인트가 됩니다.
-      </p>
+        <p>
+          부드러운 촉감의 고급스러운 소재를 사용하여 더욱 편안하고 안락합니다. <br>
+          블랑코는 세련된 컬러감으로 인테리어 포인트가 됩니다.
+        </p>
 
-      <div class="bar">
-        <a href="#"><img src="./images/new1.jpg" alt="1" class="new1"></a>
-        <div class="sofa">
-          <a href="#">
-            <h5>블랑코 양털 패브릭 1인 소파</h5>
-            <h4>388,000원</h4>
-          </a>
-        </div>
-        <a href="#" class="dam">담기</a>
-      </div>
-    </div>
-
-    <div class="swiper btn">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/new02.png" alt="이미지1">
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/new03.png" alt="이미지2">
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/new04.png" alt="이미지3">
+        <div class="bar">
+          <a href="#"><img src="./images/new1.jpg" alt="1" class="new1"></a>
+          <div class="sofa">
+            <a href="#">
+              <h5>블랑코 양털 패브릭 1인 소파</h5>
+              <h4><del>388,000원</del> 349,200원 <span>10%</span></h4>
+            </a>
+          </div>
+          <a href="#" class="dam">담기</a>
         </div>
       </div>
-      <div class="swiper-button-next">
-        <img src="./images/arrow_right.png" alt="다음">
-      </div>
-      <div class="swiper-button-prev">
-        <img src="./images/arrow_left.png" alt="이전">
+
+      <div class="swiper btn">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/new02.png" alt="이미지1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/new03.png" alt="이미지2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/new04.png" alt="이미지3">
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./images/arrow_right.png" alt="다음">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./images/arrow_left.png" alt="이전">
+        </div>
       </div>
     </div>
   </div>
@@ -369,19 +373,49 @@
     <div class="swiper instagram">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./images/sns01.png" alt="이미지1">
+          <a href="#">
+            <img src="./images/sns01.png" alt="이미지1">
+            <div class="h_text">
+              <img src="./images/alternate_email.png" alt="더보기">
+              <p>게시글 보기</p>
+            </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/sns02.png" alt="이미지2">
+          <a href="#">
+            <img src="./images/sns02.png" alt="이미지2">
+            <div class="h_text">
+              <img src="./images/switch_account.png" alt="더보기">
+              <p>게시글 보기</p>
+            </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/sns03.png" alt="이미지3">
+          <a href="#">
+            <img src="./images/sns03.png" alt="이미지3">
+            <div class="h_text">
+              <img src="./images/person_pin_circle.png" alt="더보기">
+              <p>게시글 보기</p>
+            </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/sns04.png" alt="이미지4">
+          <a href="#">
+            <img src="./images/sns04.png" alt="이미지4">
+            <div class="h_text">
+              <img src="./images/account_circle.png" alt="더보기">
+              <p>게시글 보기</p>
+            </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/sns05.png" alt="이미지5">
+          <a href="#">
+            <img src="./images/sns05.png" alt="이미지5">
+            <div class="h_text">
+              <img src="./images/tag.png" alt="더보기">
+              <p>게시글 보기</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -403,41 +437,41 @@
     <h1>Notice</h1>
 
     <div class="notice_box">
-      <ul class="bigger">
-        <li>
-          <ul data-aos="fade-up" class="contact">
-            <li class="bold">Contact</li>
-            <li class="bolder">1588-1650</li>
-            <li class="ppp">에코디 인테리어에 관해 궁금한 내용이 있으시다면 <br>
-              언제든 연락 주시기 바랍니다.</li>
-            <li><a href="#" class="more">
-                Contact Us
-              </a></li>
-          </ul>
-        </li>
-        <li>
-          <ul data-aos="fade-up" data-aos-delay="300" class="contact">
-            <li class="bold">FAQ</li>
-            <li class="pp">고객님들이 자주 묻는 질문과 <br>
-              그에 대한 답변을 바로 확인하세요.
-            </li>
-            <li><a href="#" class="more">
-                More View
-              </a></li>
-          </ul>
-        </li>
-        <li>
-          <ul data-aos="fade-up" data-aos-delay="600" class="contact">
-            <li class="bold">Inquiry</li>
-            <li class="pp">문의 사항이나 요청하실 정보가 있다면 <br>성심성의껏 답변해 드리겠습니다.</li>
-            <li><a href="#" class="more">
-                More View
-              </a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <!-- <img src="./images/notice.png" alt="공지"> -->
+      <div class="black">
+        <ul class="bigger">
+          <li>
+            <ul data-aos="fade-up" class="contact">
+              <li class="bold">Contact</li>
+              <li class="bolder">1588-1650</li>
+              <li class="ppp">에코디 인테리어에 관해 궁금한 내용이 있으시다면 <br>
+                언제든 연락 주시기 바랍니다.</li>
+              <li><a href="#" class="more">
+                  Contact Us
+                </a></li>
+            </ul>
+          </li>
+          <li>
+            <ul data-aos="fade-up" data-aos-delay="300" class="contact">
+              <li class="bold">FAQ</li>
+              <li class="pp">고객님들이 자주 묻는 질문과 <br>
+                그에 대한 답변을 바로 확인하세요.
+              </li>
+              <li><a href="#" class="more">
+                  More View
+                </a></li>
+            </ul>
+          </li>
+          <li>
+            <ul data-aos="fade-up" data-aos-delay="600" class="contact">
+              <li class="bold">Inquiry</li>
+              <li class="pp">문의 사항이나 요청하실 정보가 있다면 <br>성심성의껏 답변해 드리겠습니다.</li>
+              <li><a href="#" class="more">
+                  More View
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -484,6 +518,10 @@
       <p class="copy">Copyright 2025. Ecordy Corp. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- 탑 버튼 -->
+  <a href="#" class="top_btn">TOP</a>
+
 
 
 
@@ -541,7 +579,7 @@
     const slide = gsap.timeline();
     slide
       .to(".slide div", {
-        x: -600,
+        x: -650,
       })
 
     ScrollTrigger.create({
@@ -558,16 +596,16 @@
 
     const lenis = new Lenis();
 
-        lenis.on('scroll', (e) => {
-            console.log(e);
-        })
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    })
 
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf);
-        }
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf);
+    }
 
-        requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
   </script>
 </body>
 

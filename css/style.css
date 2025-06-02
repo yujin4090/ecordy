@@ -13,6 +13,8 @@ ul {
 a {
     text-decoration: none;
     color: #333;
+
+    /* cursor: url(../images/cursor_pointer.png) , auto; */
 }
 
 body {
@@ -20,12 +22,14 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #333;
+
+    /* cursor: url(../images/cursor.png) , auto; */
 }
 
 
 /* 헤더 */
 .logo {
-    width: 113px;
+    width: 110px;
     display: block;
 }
 
@@ -34,12 +38,13 @@ body {
     display: block;
 }
 
-header {
+.head {
+    margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    width: 1346px;
-    height: 74px;
+    width: 1320px;
+    height: 65px;
     align-items: center;
     background-color: white;
     position: fixed;
@@ -58,7 +63,7 @@ header {
 }
 
 .menu a {
-    color: #6EAE9F;
+    color: #6fa89b;
 }
 
 .menu a:hover {
@@ -66,8 +71,8 @@ header {
 }
 
 .login {
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 15px;
+    font-weight: 700;
     display: flex;
     gap: 20px;
 }
@@ -85,7 +90,7 @@ header {
 
 /* 메인배너 */
 .banner {
-    width: 1920px;
+    width: 100%;
     height: 800px;
     margin: auto;
     overflow: hidden;
@@ -294,7 +299,7 @@ header {
 } */
 
 .in li {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 8px;
     overflow: hidden;
 }
@@ -306,17 +311,30 @@ header {
 .in img {
     width: 255px;
     height: 290px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .in img:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
+    filter: brightness(80%);
+}
+
+.in del{
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.in span{
+    font-size: 18px;
+    font-weight: 900;
+    color: #44b199;
 }
 
 .shop {
     width: 255px;
     border: 1px solid #6AAA9B;
-    border-radius: 10px;
+    border-radius: 8px;
     /* text-align: center; */
     background: url(../images/shop.png) no-repeat 107px 5px;
 }
@@ -332,14 +350,15 @@ header {
     text-decoration: none;
 }
 
-.name {
-    font-size: 15px;
+.name a{
+    font-size: 17px;
     font-weight: 700;
 }
 
 .price {
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 15px;
+    font-family: 'GmarketSans';
+    font-weight: 800;
 }
 
 /* 베스트 상품 */
@@ -473,33 +492,34 @@ header {
 
 /* 신제품 */
 .new {
-    width: 1920px;
+    width: 1320px;
     margin: 0 auto 200px;
     display: flex;
+    position: relative;
 }
 
 .new_t {
     width: 500px;
-    margin-left: 300px;
 }
 
 .new_t h1 {
+    font-family: 'GmarketSans';
     font-size: 95px;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 110px;
 }
 
 .new_t h2 {
-    font-size: 36px;
+    font-size: 37px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .new_t p {
-    font-size: 16px;
-    border-top: 5px solid #333;
+    font-size: 17px;
+    border-top: 6px solid #333;
     padding-top: 20px;
-    line-height: 3;
+    line-height: 2;
 }
 
 .bar {
@@ -515,7 +535,7 @@ header {
 .bar img {
     width: 76px;
     display: block;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .bar img:hover {
@@ -523,19 +543,32 @@ header {
 }
 
 .sofa {
-    margin: 0 120px 0 25px;
+    margin: 0 115px 0 25px;
     font-size: 16px;
 }
 
 .sofa h5{
-    font-size: 16px;
+    font-size: 16.5px;
     font-weight: 500;
 }
 
 .sofa h4 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 15px;
-    font-weight: 900;
+    font-family: 'GmarketSans';
+    font-weight: 800;
+}
+
+.sofa del{
+    font-size: 13px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.sofa span{
+    font-size: 16px;
+    color: #44b199;
+    font-weight: 800;
 }
 
 .dam {
@@ -544,9 +577,14 @@ header {
     font-size: 13px;
     font-weight: 700;
     height: 22px;
-    padding: 2px 25px 0 40px;
+    padding: 2px 25px 0 37px;
     border-radius: 20px;
     background: url(../images/shop.png) no-repeat 30%;
+}
+
+.btn{
+    position: absolute;
+    right: -60px;
 }
 
 
@@ -557,6 +595,7 @@ header {
 
 .btn .swiper-wrapper{
     width: 609px;
+    /* margin-right: 50px; */
 }
 
 .btn .swiper-button-next:after,
@@ -610,7 +649,7 @@ header {
 }
 
 .ev_img img:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     filter: brightness(60%);
 }
 
@@ -618,7 +657,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .ev_in h2 {
@@ -651,7 +690,7 @@ header {
 /* 리뷰 */
 .review {
     text-align: center;
-    width: 1920px;
+    width: 100%;
     margin: 0 auto 200px;
 }
 
@@ -691,27 +730,35 @@ header {
     padding-bottom: 30px;
 }
 
+/* .instagram .swiper-slide img{
+    transition: 1s;
+} */
+
+/* .instagram .swiper-slide img:hover{
+    filter: brightness(70%);
+} */
+
 .instagram .swiper-wrapper{
     margin-bottom: 40px;
 }
 
 .instagram .swiper-pagination-bullet-active{
-    background-color: #3f817a;
+    background-color: #3f3f3f;
 }
 
 .instagram .swiper-pagination-bullet{
-    width: 25px;
+    width: 20px;
     border-radius: 20px;
 }
 
 .span h2 {
     font-size: 64px;
     font-weight: 900;
-    color: rgba(106, 154, 152, 0.5);
+    color: rgba(106, 154, 152, 0.6);
     margin-top: 40px;
     width: 2900px;
 
-    animation: ani 6s linear infinite;
+    animation: ani 7s linear infinite;
 }
 
 .span h2 span {
@@ -722,12 +769,60 @@ header {
     overflow-x: hidden;
 }
 
+
+.instagram .swiper-slide{
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram .swiper-slide a:hover .h_text{
+    /* 선명하게 만들기 */
+    opacity: 1;
+    /* 100% */
+
+    transform: scale(1.2, 1.2);
+}
+
+.h_text img{
+    width: 60px;
+    margin: 0 auto;
+    filter: invert(1);
+}
+
+.h_text p{
+    color: white;
+    font-size: 18px;
+}
+
+.instagram .swiper-slide .h_text{
+    background-color: rgba(39, 39, 39, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* flex 사용해서 글자 세로 가운데 위치 */
+    display: flex;
+    flex-direction: column;
+    /* 세로 방향으로 바꾸기 */
+    justify-content: center;
+    /* 주축여백 가운데 */
+
+    /* 투명하게 만들기 */
+    opacity: 0;
+
+
+    /* 서서히 변하게 만들기 */
+    transition: 1s;
+}
+
 /* 리뷰 */
 
 
 /* 공지사항 */
 .notice {
-    width: 1920px;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -740,7 +835,7 @@ header {
 }
 
 .notice_box {
-    width: 1920px;
+    width: 100%;
     height: 778px;
     background: url(../images/notice_.jpg) no-repeat center / cover;
     filter: brightness(95%);
@@ -755,6 +850,12 @@ header {
     filter: brightness(80%);
 } */
 
+.black{
+    width: 100%;
+    height: 778px;
+    background-color: rgba(83, 83, 83, 0.2);
+}
+
 .bigger {
     width: 1306px;
     display: flex;
@@ -766,7 +867,7 @@ header {
     width: 428px;
     height: 450px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     margin-top: 150px;
 }
@@ -885,3 +986,27 @@ footer a {
 }
 
 /* 푸터 */
+
+
+/* 탑 버튼 */
+.top_btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid #2CA18D;
+    border-radius: 100px;
+    font-size: 18px;
+    padding: 13px 10px;
+    color: #2CA18D;
+    font-weight: 700;
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+    z-index: 3;
+}
+/* 탑 버튼 */
+
+
+
+html{
+    scroll-behavior: smooth;
+}
