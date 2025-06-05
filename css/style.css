@@ -22,6 +22,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #333;
+    min-width: 1320px;
 
     /* cursor: url(../images/cursor.png) , auto; */
 }
@@ -43,13 +44,16 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    width: 1320px;
+    max-width: 1320px;
+    width: 95%;
+    box-sizing: border-box;
     height: 65px;
     align-items: center;
     background-color: white;
     position: fixed;
     top: 15px;
-    left: 13%;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50px;
     box-shadow: 0 4px 10.6px rgba(51, 51, 51, 0.25);
     z-index: 2;
@@ -58,8 +62,8 @@ body {
 .menu {
     font-size: 18px;
     display: flex;
-    gap: 20px;
-    font-weight: 900;
+    gap: 25px;
+    font-weight: 800;
 }
 
 .menu a {
@@ -71,10 +75,12 @@ body {
 }
 
 .login {
+    font-family: 'Pretendard';
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .login a {
@@ -121,12 +127,12 @@ body {
 .bi {
     width: 1320px;
     height: 759px;
-    margin: 200px auto;
+    margin: 200px auto 150px;
 }
 
 .bi h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 900;
     color: #5f8d8e;
     margin-bottom: 40px;
@@ -166,7 +172,7 @@ body {
 }
 
 .bi p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 50px;
 }
@@ -187,19 +193,19 @@ body {
 /* 브랜드가치 */
 .brand {
     width: 1320px;
-    margin: 0 auto 200px;
+    margin: 0 auto 250px;
     text-align: center;
 }
 
 .brand h2 {
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 700;
     color: #bcbcbc;
     margin-bottom: 20px;
 }
 
 .brand h1 {
-    font-size: 55px;
+    font-size: 52px;
     font-weight: 900;
     color: #497D7E;
     margin-bottom: 136px;
@@ -258,7 +264,7 @@ body {
 }
 
 .text2 h1 {
-    font-size: 48px;
+    font-size: 47px;
     color: #333;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -273,8 +279,12 @@ body {
     border-radius: 50px;
 }
 
+.l_tag a:hover{
+    text-decoration: underline;
+}
+
 .select {
-    background-color: #528884;
+    background-color: #5d9995;
 }
 
 .select a {
@@ -282,8 +292,8 @@ body {
 }
 
 .text2 a {
-    font-size: 16px;
-    padding: 10px 30px;
+    font-size: 17px;
+    padding: 10px 25px;
 }
 
 .product {
@@ -300,7 +310,7 @@ body {
 
 .in li {
     font-size: 17px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -312,6 +322,7 @@ body {
     width: 255px;
     height: 290px;
     transition: 0.8s;
+    display: block;
 }
 
 .in img:hover {
@@ -326,28 +337,48 @@ body {
 }
 
 .in span{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 900;
-    color: #44b199;
+    color: #61ac9b;
 }
 
 .shop {
     width: 255px;
     border: 1px solid #6AAA9B;
     border-radius: 8px;
-    /* text-align: center; */
-    background: url(../images/shop.png) no-repeat 107px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.shop img{
+    width: 16px;
+    height: 16px;
+    transition: 0.5s;
 }
 
 .shop a {
-    padding: 6px 100px 6px 125px;
     font-size: 14px;
     font-weight: 700;
     color: #6AAA9B;
+    padding: 3px 0;
+
+    transition: 0.5s;
 }
 
-.shop a:hover{
+.shop:hover{
     text-decoration: none;
+    background-color: rgba(112, 177, 175);
+}
+
+.shop:hover a{
+    color: white;
+}
+
+.shop:hover img{
+    filter: brightness(0) invert(1);
 }
 
 .name a{
@@ -355,8 +386,8 @@ body {
     font-weight: 700;
 }
 
-.price {
-    font-size: 15px;
+.in .price {
+    font-size: 16px;
     font-family: 'GmarketSans';
     font-weight: 800;
 }
@@ -394,14 +425,23 @@ body {
     /* border-bottom: 1px solid #333; */
 }
 
+.left a:hover{
+    color: #919191;
+}
+
 .line {
     width: 25px;
     height: 5px;
     border-bottom: 1px solid #666;
 }
 
-.mod {
-    color: #528884;
+.left .mod {
+    color: #57918d;
+    font-weight: 900;
+}
+
+.left .mod:hover{
+    color: #57918d;
 }
 
 .modern {
@@ -420,7 +460,7 @@ body {
 }
 
 .right p {
-    font-size: 19px;
+    font-size: 18px;
     padding-bottom: 20px;
 }
 
@@ -442,7 +482,7 @@ body {
 }
 
 .all h1 {
-    font-size: 48px;
+    font-size: 47px;
     font-weight: 700;
     padding-left: 10px;
 }
@@ -472,7 +512,7 @@ body {
 }
 
 .nm {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     padding: 20px 0 10px 30px;
 }
@@ -480,6 +520,7 @@ body {
 .p2 {
     padding-left: 30px;
     padding-bottom: 45px;
+    font-size: 17px;
 }
 
 .shadow{
@@ -493,7 +534,7 @@ body {
 /* 신제품 */
 .new {
     width: 1320px;
-    margin: 0 auto 200px;
+    margin: 0 auto 380px;
     display: flex;
     position: relative;
 }
@@ -543,8 +584,12 @@ body {
 }
 
 .sofa {
-    margin: 0 115px 0 25px;
+    margin: 0 112px 0 25px;
     font-size: 16px;
+}
+
+.sofa a:hover h5{
+    text-decoration: underline;
 }
 
 .sofa h5{
@@ -567,30 +612,60 @@ body {
 
 .sofa span{
     font-size: 16px;
-    color: #44b199;
+    color: #61ac9b;
     font-weight: 800;
 }
 
-.dam {
+.bt{
+    width: 87px;
     border: 1px solid #6AAA9B;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.bt img{
+    width: 16px;
+    height: 16px;
+    display: block;
+    transition: 0.5s;
+}
+
+.dam {
     color: #6AAA9B;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     height: 22px;
-    padding: 2px 25px 0 37px;
-    border-radius: 20px;
-    background: url(../images/shop.png) no-repeat 30%;
+    padding: 4px 0 2px 0;
+
+    transition: 0.5s;
+}
+
+.bt:hover{
+    background-color: rgba(112, 177, 175);
+}
+
+.bt:hover .dam{
+    color: white;
+}
+
+.bt:hover img{
+    filter: brightness(0) invert(1);
 }
 
 .btn{
     position: absolute;
-    right: -60px;
+    right: 0;
 }
 
 
 /* 버튼 */
 .btn .swiper-slide{
     width: 609px;
+    height: 780px;
 }
 
 .btn .swiper-wrapper{
@@ -618,11 +693,11 @@ body {
 }
 
 .event h1 {
-    font-size: 48px;
+    font-size: 45px;
     color: #5f8d8e;
     text-align: center;
     font-weight: 900;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .ev {
@@ -661,15 +736,15 @@ body {
 }
 
 .ev_in h2 {
-    font-size: 28px;
+    font-size: 29px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-radius: 20px;
     /* transition: 0.5s; */
 }
 
 .ev_in p {
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     border-radius: 20px;
     /* transition: 0.5s; */
@@ -699,7 +774,7 @@ body {
 }
 
 .review h1 {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 900;
     color: #5F8D8E;
     margin-bottom: 70px;
@@ -725,14 +800,15 @@ body {
 
 
 .instagram {
-    width: 1920px;
+    width: 100%;
     margin: auto;
     padding-bottom: 30px;
 }
 
-/* .instagram .swiper-slide img{
-    transition: 1s;
-} */
+.instagram img{
+    display: block;
+    width: 100%;
+}
 
 /* .instagram .swiper-slide img:hover{
     filter: brightness(70%);
@@ -784,14 +860,14 @@ body {
 }
 
 .h_text img{
-    width: 60px;
+    width: 40px;
     margin: 0 auto;
     filter: invert(1);
 }
 
 .h_text p{
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .instagram .swiper-slide .h_text{
@@ -828,7 +904,7 @@ body {
 }
 
 .notice h1 {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 900;
     color: #5F8D8E;
     margin-bottom: 59px;
@@ -857,15 +933,15 @@ body {
 }
 
 .bigger {
-    width: 1306px;
+    width: 1320px;
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
 
 .contact {
-    width: 428px;
-    height: 450px;
+    width: 433px;
+    height: 455px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -877,29 +953,32 @@ body {
 }
 
 .bold {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 900;
     padding: 115px 0 0 0;
 }
 
 .bolder {
-    font-size: 36px;
+    font-size: 37px;
     font-weight: 900;
 }
 
 .ppp {
     padding: 15px 0 30px 0;
+    font-size: 17px;
 }
 
 .pp {
     padding: 20px 0 45px 0;
-    line-height: 2.5;
+    line-height: 2;
+    font-size: 17px;
 }
 
 .more {
+    font-family: 'Pretendard';
     width: 180px;
     height: 32px;
-    font-weight: 500;
+    font-weight: 200;
     background-color: #333;
     color: #ffffff;
     padding: 7px 47px;
@@ -944,13 +1023,18 @@ footer a {
     text-decoration: underline;
 }
 
+.line_1 a{
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+
 .line_1 img {
     width: 123px;
     display: block;
 }
 
 .line_1 span {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .line2 {
@@ -960,6 +1044,8 @@ footer a {
 
 .left_ {
     padding: 30px 0;
+    font-family: 'Pretendard';
+    font-weight: 300;
 }
 
 .left_ ul {
@@ -985,6 +1071,10 @@ footer a {
     width: 31px;
 }
 
+.copy{
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
 /* 푸터 */
 
 
@@ -993,9 +1083,9 @@ footer a {
     align-items: center;
     text-align: center;
     border: 2px solid #2CA18D;
-    border-radius: 100px;
+    border-radius: 100%;
     font-size: 18px;
-    padding: 13px 10px;
+    padding: 13px 8px 9px;
     color: #2CA18D;
     font-weight: 700;
     position: fixed;
