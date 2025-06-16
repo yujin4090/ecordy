@@ -478,11 +478,12 @@ body {
 
 /* 전체 상품 */
 .all {
-    width: 1320px;
-    margin: auto;
+    overflow: hidden;
 }
 
 .all h1 {
+    width: 1320px;
+    margin: auto;
     font-size: 47px;
     font-weight: 700;
     padding-left: 10px;
@@ -491,7 +492,8 @@ body {
 .slide {
     display: flex;
     gap: 30px;
-    margin: 30px 0 200px;
+    margin: 30px auto 200px;
+    width: 1320px;
 }
 
 /* .slide a {
