@@ -47,7 +47,7 @@ body {
     max-width: 1320px;
     width: 95%;
     box-sizing: border-box;
-    height: 65px;
+    height: 70px;
     align-items: center;
     background-color: white;
     position: fixed;
@@ -62,16 +62,17 @@ body {
 .menu {
     font-size: 18px;
     display: flex;
-    gap: 25px;
+    /* gap: 25px; */
     font-weight: 800;
 }
 
 .menu a {
-    color: #6fa89b;
+    padding: 10px 20px;
+    color: #444;
 }
 
 .menu a:hover {
-    color: #538378;
+    color: #6FA89B;
 }
 
 .login {
@@ -741,6 +742,14 @@ body {
     margin-bottom: 12px;
     border-radius: 20px;
     /* transition: 0.5s; */
+}
+
+.ev_in h2 a{
+    transition: 0.5s;
+}
+
+.ev_in h2 a:hover{
+    color: #4b7e7a;
 }
 
 .ev_in p {
