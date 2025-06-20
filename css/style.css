@@ -132,9 +132,10 @@ body {
 }
 
 .bi h1 {
+    font-family: 'Pretendard';
     text-align: center;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
     color: #5f8d8e;
     margin-bottom: 40px;
 }
@@ -199,15 +200,17 @@ body {
 }
 
 .brand h2 {
+    font-family: 'Pretendard';
     font-size: 29px;
-    font-weight: 700;
+    font-weight: 500;
     color: #bcbcbc;
     margin-bottom: 20px;
 }
 
 .brand h1 {
+    font-family: 'Pretendard';
     font-size: 52px;
-    font-weight: 900;
+    font-weight: 700;
     color: #497D7E;
     margin-bottom: 136px;
 }
@@ -265,6 +268,8 @@ body {
 }
 
 .text2 h1 {
+    font-family: 'Pretendard';
+    font-weight: 600;
     font-size: 47px;
     color: #333;
     margin-bottom: 20px;
@@ -485,7 +490,8 @@ body {
     width: 1320px;
     margin: auto;
     font-size: 47px;
-    font-weight: 700;
+    font-family: 'Pretendard';
+    font-weight: 600;
     padding-left: 10px;
 }
 
@@ -555,7 +561,8 @@ body {
 
 .new_t h2 {
     font-size: 37px;
-    font-weight: 700;
+    font-family: 'Pretendard';
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -699,7 +706,8 @@ body {
     font-size: 45px;
     color: #5f8d8e;
     text-align: center;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 700;
     margin-bottom: 70px;
 }
 
@@ -786,7 +794,8 @@ body {
 
 .review h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 700;
     color: #5F8D8E;
     margin-bottom: 70px;
 }
@@ -840,7 +849,8 @@ body {
 
 .span h2 {
     font-size: 64px;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 600;
     color: rgba(106, 154, 152, 0.6);
     margin-top: 40px;
     width: 2900px;
@@ -916,7 +926,8 @@ body {
 
 .notice h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 700;
     color: #5F8D8E;
     margin-bottom: 59px;
 }
@@ -965,13 +976,15 @@ body {
 
 .bold {
     font-size: 38px;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 600;
     padding: 115px 0 0 0;
 }
 
 .bolder {
     font-size: 37px;
-    font-weight: 900;
+    font-family: 'Pretendard';
+    font-weight: 600;
 }
 
 .ppp {
