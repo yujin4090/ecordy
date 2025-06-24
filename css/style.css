@@ -72,7 +72,7 @@ body {
 }
 
 .menu a:hover {
-    color: #6FA89B;
+    color: #70b1af ;
 }
 
 .login {
@@ -345,7 +345,7 @@ body {
 .in span{
     font-size: 17px;
     font-weight: 900;
-    color: #61ac9b;
+    color: #5d9995;
 }
 
 .shop {
@@ -376,7 +376,7 @@ body {
 
 .shop:hover{
     text-decoration: none;
-    background-color: rgba(112, 177, 175);
+    background-color: #70b1af;
 }
 
 .shop:hover a{
@@ -622,7 +622,7 @@ body {
 
 .sofa span{
     font-size: 16px;
-    color: #61ac9b;
+    color: #5d9995;
     font-weight: 800;
 }
 
@@ -655,7 +655,7 @@ body {
 }
 
 .bt:hover{
-    background-color: rgba(112, 177, 175);
+    background-color: #70b1af;
 }
 
 .bt:hover .dam{
